@@ -1,0 +1,206 @@
+/* Базовые стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 375px;
+    background-color: #E0E5EB;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+/* Секция 1: Иконки */
+.icons-section {
+    padding: 15px 0;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.icon.center {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+    
+}
+
+/* Секция 2: Основная информация о товаре */
+.product-info {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.product-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #324153;
+}
+
+.stars {
+    margin-bottom: 10px;
+}
+
+.product-main-image img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.color-option {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #324153;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.color-option.selected {
+    opacity: 1;
+}
+
+/* Секция 3: Детали товара */
+.product-details {
+    background-color: #324153;
+    border-radius: 20px;
+    color: white;
+    padding: 25px;
+    margin: 0 -20px;
+    width: calc(100% - 10px);
+}
+
+.price-section {
+    margin-bottom: 25px;
+}
+
+.price-label {
+    display: block;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.price-value {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.size-section {
+    margin-bottom: 25px;
+}
+
+.size-label {
+    display: block;
+    font-size: 20px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.size-options {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.size-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.size-option.selected {
+    background-color: #324153;
+    color: #FC783F;
+    border-color: #FC783F;
+    opacity: 1;
+}
+
+.description-section {
+    margin-bottom: 30px;
+}
+
+.description-label {
+    display: block;
+    font-size: 20px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.description-text {
+    font-size: 12px;
+    line-height: 1.5;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.more-link {
+    color: #FC783F;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.action-buttons {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 60px;
+    padding-bottom: 20px;
+    margin-bottom: -45px;
+}
+
+.edit-btn {
+    flex: 1;
+    padding: 15px;
+    background-color: #E0E5EB;
+    color: #324153;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.delete-btn {
+    flex: 1;
+    padding: 15px;
+    background-color: #FC783F;
+    color: #324153;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+}
